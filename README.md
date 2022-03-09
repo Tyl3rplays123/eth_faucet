@@ -8,8 +8,6 @@ https://ropsten.oregonctf.org
 
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel=stylesheet type=text/css href="/static/style.css">
-<link rel="shortcut icon" type="image/png" href="https://ethereum.org/favicon-32x32.png">
 
 <section>
         <div id="content" class=page>
