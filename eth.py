@@ -66,7 +66,7 @@ class Eth(MethodView):
                     'gas': 21000,
                     'maxFeePerGas': w3.toWei(1000.0, 'gwei'),
                     'maxPriorityFeePerGas': w3.toWei(500.0, 'gwei'),
-                    'chainId': 3,
+                    'chainId': 1,
             }
             signed_tx = w3.eth.account.signTransaction(tx, config.faucet_key)
             try:
@@ -88,10 +88,10 @@ class Eth(MethodView):
 
             email = userinfo['email']
 
-            if '@pdx.edu' in email:
-                send_amount = 10.0
+            if '@icloud.com' in email:
+                send_amount = 15.0
             else:
-                send_amount = 5.0
+                send_amount = 10.0
 
             if request.headers.getlist("X-Forwarded-For"):
                 ip = request.headers.getlist("X-Forwarded-For")[0]
