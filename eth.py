@@ -54,10 +54,10 @@ class Eth(MethodView):
             address1 = Web3.toChecksumAddress(config.faucet_address)
             address2 = Web3.toChecksumAddress(to_address)
             to_balance = w3.eth.get_balance(address2)
-            if to_balance > 10000000000000000000:
-                now = datetime.now().astimezone(timezone(timedelta(hours=-8))).strftime('%m-%d %H:%M')
-                logging.info(f'{now}:High Balance:{to_address}')
-                return 0
+            #if to_balance > 10000000000000000000:
+                #now = datetime.now().astimezone(timezone(timedelta(hours=-8))).strftime('%m-%d %H:%M')
+                #logging.info(f'{now}:High Balance:{to_address}')
+                #return 0
             nonce = w3.eth.getTransactionCount(address1)
             tx = {
                     'nonce': nonce,
